@@ -72,6 +72,13 @@ nav {}
     border-right: var(--grey);
 }
 
+.menu-item ul a:hover {
+    color: white;
+    background-color: #FF900E;
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
 .menu {
     clear: both;
     font-size: 20px;
@@ -83,8 +90,8 @@ nav {}
 .menu-icon {
     position: relative;
     float: right;
-    font-size: 30px;
-    padding: 30px 20px;
+    font-size: 25px;
+    padding: 35px 30px 30px 20px;
 
 }
 
@@ -129,6 +136,10 @@ nav {}
     border-radius: 10px;
 }
 
+.btn-primary:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
 
 /* Main Section */
 
@@ -162,47 +173,364 @@ nav {}
 .features-container {
     display: flex;
     align-items: center;
+    gap: 200px;
+    margin-bottom: 100px;
 }
 
-.feature-container {
+.feature-container .title {
+    font-size: var(--title-size);
+    font-weight: 700;
+    width: 450px;
+    padding: 0 20px;
+    border-left: 5px solid var(--orange);
+    margin-bottom: 25px;
+}
+
+.feature-container .description {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.feature-description-container {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+
 }
 
+.feature-info {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .1);
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.feature-title {
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature-info .description {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.architect-photo img {
+    width: 710px;
+    /* padding: 20px; */
+}
+
+.weird-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.weird-button .btn-primary {
+    height: auto;
+    padding: 40px 30px;
+    position: relative;
+    top: -250px;
+}
+
+/* Facts Section */
+
+.facts-section .description {
+    text-align: left;
+    width: 540px;
+    margin-bottom: 100px;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.fact {
+    text-align: center;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 40px 30px;
+    height: 245px;
+    width: 245px;
+}
+
+.fact:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+.fact img {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 5px;
+}
+
+.fact .number-count {
+    color: var(--grey2);
+    font-size: var(--title-size);
+    margin-bottom: 5px;
+}
+
+.fact h4 {
+    font-size: 20px;
+    color: var(--grey);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Review Section */
+
+.review-section {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 40px 0;
+}
+
+.review-section .title {
+    text-align: center;
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    padding: 50px 100px;
+    margin-bottom: 100px;
+
+}
+
+.review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, .1);
+    padding: 50px;
+    border-radius: 10px
+}
+
+.review div {
+    text-align: center;
+}
+
+.client-name {
+    font-size: 20px;
+    color: var(--grey2);
+    font-weight: 600;
+}
+
+.client-photo {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* Spondors Section */
+.sponsor-info {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponsor-section .title {
+    text-align: center;
+    font-size: var(--title-size);
+}
+
+.sponsor-section .description {
+    height: 50px;
+    width: 540px;
+    text-align: center;
+    color: var(--grey);
+    margin-bottom: 50px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    padding: 50px 30px;
+    margin-bottom: 100px;
+    filter: grayscale(100%);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer {
+    color: var(--grey);
+    font-size: 20px;
+    background-color: var(--background);
+    padding: 50px 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+/* Responsive section*/
 
 
+/*Mobile Phone*/
 
+@media screen and (max-width:576px) {
+    /* Nav bar */
+    .logo .title{
+        font-size: 30px;
+        padding: 30px 20px;
+    }
+    /* banner */
+    .banner-section{
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+    
+    .banner-section p{
+        padding: 0 20px;
+    }
+    .banner-title {
+        font-size: 30px;
+    }
+    .banner-section .button{
+        margin-bottom: 0;
+    }
+    .banner-photo img{
+    width: 350px;
+    }
 
+    
 
+    /* Quick List */
+    .feature-quick-list-container {
+        flex-direction: column;
+    }
 
+    .team-photo-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+    }
 
+    /* Featured section */
+    .features-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
 
+    .feature-container .title {
+        width: auto;
+    }
 
+    .feature-info {
+        width: auto;
+    }
 
+    .feature-container .feature-head .description {
+        padding: 0 15px;
+        text-align: justify;
+    }
 
+    .architect-photo img {
+        width: 350px;
+    }
 
+    .feature-description-container {
+        padding: 0 20px;
+    }
 
+    .weird-button .btn-primary {
+        top: 0;
+    }
 
+    /* Facts Section */
+    .facts-section {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
 
+    .facts-info {
+        text-align: center;
+    }
 
+    .facts-section .description {
+        padding: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
 
+    .facts-container {
+        display: grid;
+        gap: 10px;
+    }
 
+    /* Review */
+    .review-section {
+        box-shadow: none;
+    }
 
+    .review-container {
+        padding: 50px;
+    }
 
+    .review {
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    .reverse {
+        flex-direction: column-reverse;
+    }
 
+    .description {
+        max-width: 100%;
+        color: var(--grey);
+        font-size: 16px;
+        text-align: center;
+    }
 
+    /* Sponsor Section */
+    .sponsors {
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .sponsor-info{
+        gap: 30px;
+    }
+    .sponsors img {
+        padding-left: 70px;
+    }
 
+    /* Footer */
+    .footer {
+        padding: 50px;
+    }
 
+    .hide {
+        display: none;
+    }
+}
 
-
-/* Responsive */
+/* Desktop */
 @media screen and (min-width: 993px) {
 
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .title {
@@ -217,8 +545,9 @@ nav {}
     }
 
     .menu-item ul a {
-        padding: 20px 0;
-        margin-left: 80px;
+        padding: 30px 40px;
+        border-radius: 30px;
+        margin: 0 7px;
     }
 
     .menu {
