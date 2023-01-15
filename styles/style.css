@@ -71,12 +71,6 @@ section {
     border-right: var(--grey);
 }
 
-.menu-item ul a:hover {
-    color: white;
-    background-color: #FF900E;
-    transform: scale(1.1);
-    transition: transform .3s ease;
-}
 
 .menu {
     clear: both;
@@ -135,10 +129,6 @@ section {
     border-radius: 10px;
 }
 
-.btn-primary:hover {
-    transform: scale(1.1);
-    transition: transform .3s ease;
-}
 
 /* Main Section */
 
@@ -257,10 +247,7 @@ section {
     width: 245px;
 }
 
-.fact:hover {
-    transform: scale(1.1);
-    transition: transform .3s ease;
-}
+
 
 .fact img {
     height: 55px;
@@ -565,4 +552,20 @@ section {
         display: none;
     }
 
+    .menu-item ul a:hover {
+        color: white;
+        background-color: #FF900E;
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }
+
+    .btn-primary:hover {
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }
+
+    .fact:hover {
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }
 }
