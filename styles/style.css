@@ -43,7 +43,6 @@ section {
     background-size: cover;
 }
 
-nav {}
 
 .logo {
     display: block;
@@ -335,7 +334,7 @@ nav {}
     margin-bottom: 100px;
 }
 
-/* Spondors Section */
+/* Sponsors Section */
 .sponsor-info {
     padding: 30px 50px;
     display: flex;
@@ -387,31 +386,36 @@ nav {}
 /*Mobile Phone*/
 
 @media screen and (max-width:576px) {
+
     /* Nav bar */
-    .logo .title{
+    .logo .title {
         font-size: 30px;
         padding: 30px 20px;
     }
+
     /* banner */
-    .banner-section{
+    .banner-section {
         margin-bottom: 40px;
         gap: 30px;
     }
-    
-    .banner-section p{
+
+    .banner-section p {
         padding: 0 20px;
     }
+
     .banner-title {
         font-size: 30px;
     }
-    .banner-section .button{
+
+    .banner-section .button {
         margin-bottom: 0;
     }
-    .banner-photo img{
-    width: 350px;
+
+    .banner-photo img {
+        width: 350px;
     }
 
-    
+
 
     /* Quick List */
     .feature-quick-list-container {
@@ -507,9 +511,11 @@ nav {}
         flex-direction: column;
         box-shadow: none;
     }
-    .sponsor-info{
+
+    .sponsor-info {
         gap: 30px;
     }
+
     .sponsors img {
         padding-left: 70px;
     }
